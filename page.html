@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Web Page</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: cursive;
+                }
+
+                body {
+                        overflow-x: hidden;
+                }
+
+                header {
+                        height: 15vh;
+                }
+
+                .header-top {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: goldenrod;
+                        height: 60%;
+                }
+
+                h1 {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                .header-top>h1 {
+                        font-size: 25px;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+
+                .header-top>p {
+                        font-size: 14px;
+                }
+
+                nav {
+                        display: flex;
+                        background-color: #000;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 40%;
+
+                }
+
+                nav>ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        list-style: none;
+                        padding: 5px;
+                        gap: 20px;
+                        margin-left: 15%;
+                        width: 100%;
+                }
+
+                nav>ul>a {
+                        color: #fff;
+                        text-decoration: none;
+                        transition: all 0.3s ease-in-out;
+                }
+
+                nav>ul>a:hover {
+                        color: #ff96ab;
+                        text-decoration: underline;
+                }
+
+                .search {
+                        width: 18%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 12px;
+                }
+
+                input[type="search"] {
+                        border: none;
+                        border-radius: 5px;
+                        padding: 5px;
+                        width: 90%;
+                        outline: none;
+                        margin-right: 5px;
+                        font-weight: 600;
+                }
+
+                label {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                }
+
+                .bx {
+                        color: #fff;
+                        font-size: 20px;
+                        cursor: pointer;
+                }
+
+                main {
+                        height: 85vh;
+                }
+
+                .hero {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 100%;
+                        gap: 50px;
+                        background-color: #dcfaff;
+                }
+
+                .products {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        width: 100vw;
+                }
+
+                .product {
+                        background-color: ghostwhite;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border: 0.5px solid black;
+                        box-shadow: 0 0 4.5px 0.5px black;
+                        border-radius: 5px;
+                        padding: 15px;
+                        gap: 5px;
+                        overflow: hidden;
+                        width: 20%;
+                        cursor: pointer;
+                }
+
+                .products>.product>img {
+                        height: 200px;
+                        width: 200px;
+                        mix-blend-mode: multiply;
+                        transition: transform 0.4s ease-in-out;
+                }
+
+                .products>.product>img:hover {
+                        transform: scale(1.15);
+                }
+
+                .price {
+                        display: flex;
+                        gap: 5px;
+                }
+
+                .deduct {
+                        text-decoration: line-through;
+                        text-decoration-color: red;
+                        text-decoration-thickness: 2px;
+                }
+
+                .hero-heading {
+                        text-align: center;
+                        gap: 5px;
+                        display: flex;
+                        flex-direction: column;
+                }
+
+                .product>button {
+                        padding: 5px;
+                        border: 2px solid black;
+                        border-radius: 5px;
+                        outline: none;
+                        background-color: #64d464;
+                        color: #000;
+                        transition: all 0.3s ease-in;
+                        font-weight: 600;
+                        cursor: pointer;
+                }
+
+                .product>button:hover {
+                        background-color: #20a020;
+                }
+
+                footer {
+                        background-color: #000;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50px;
+                }
+        </style>
+</head>
+
+<body>
+        <header>
+                <div class="header-top">
+                        <h1>ShopEase</h1>
+                        <p>Your one-stop online shop!</p>
+                </div>
+                <nav>
+                        <ul>
+                                <a href="#">
+                                        <li>Home</li>
+                                </a>
+                                <a href="#">
+                                        <li>Shop</li>
+                                </a>
+                                <a href="#">
+                                        <li>About</li>
+                                </a>
+                                <a href="#">
+                                        <li>Contact</li>
+                                </a>
+                        </ul>
+                        <div class="search">
+                                <input type="search" placeholder="Search.." name="search" id="search">
+                                <label for="search"><i class='bx bx-search-alt-2'></i></label>
+                        </div>
+
+                </nav>
+        </header>
+
+        <main>
+                <div class="hero">
+                        <div class="hero-heading">
+                                <h1>Browse the Best Deal of Laptop Today!</h1>
+                                <hr>
+                                <p>Buy the laptop in super saver deals!</p>
+                        </div>
+
+                        <div class="products">
+                                <div class="product product1">
+                                        <img src="./image1.jpg" alt="laptop1">
+                                        <h4>ISUS Laptop</h4>
+                                        <div class="price">
+                                                <p>Price: <span class="deduct">$700</span></p>
+                                                <p>$500</p>
+                                        </div>
+                                        <button>Add To Cart</button>
+                                </div>
+                                <div class="product product2">
+                                        <img src="./image2.jpg" alt="laptop2">
+                                        <h4>Dell Laptop</h4>
+                                        <div class="price">
+                                                <p>Price: <span class="deduct">$400</span></p>
+                                                <p>$200</p>
+                                        </div>
+                                        <button>Add To Cart</button>
+                                </div>
+                                <div class="product product3">
+                                        <img src="./image3.jfif" alt="laptop3">
+                                        <h4>MAC Book</h4>
+                                        <div class="price">
+                                                <p>Price: <span class="deduct">$1000</span></p>
+                                                <p>$800</p>
+                                        </div>
+                                        <button>Add To Cart</button>
+                                </div>
+                                <div class="product product4">
+                                        <img src="./image4.jfif" alt="laptop4">
+                                        <h4>HP Laptop</h4>
+                                        <div class="price">
+                                                <p>Price: <span class="deduct">$800</span></p>
+                                                <p>$600</p>
+                                        </div>
+                                        <button>Add To Cart</button>
+                                </div>
+                        </div>
+                </div>
+        </main>
+
+        <footer>
+                <p>&copy; 2025 | Raghav Gupta </p>
+        </footer>
+</body>
+
+</html>
